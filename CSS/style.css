@@ -1,0 +1,148 @@
+.attribution {
+    font-size: 11px; text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 5px; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
+*{
+   font-family: 'Changa', sans-serif;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   
+}
+body{
+   background-color: hsl(27, 66%, 92%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   color: hsl(25, 47%, 15%);
+}
+header{
+   background-color: hsl(10, 79%, 65%);
+   width: 450px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   height: 100px;
+   flex-wrap: wrap;
+   padding: 20px;
+   color: white;
+   position: relative;
+   justify-content: center;
+}
+header img.logo{
+   height: 50px;
+   width: 50px;
+   position: absolute;
+   right: 30px;
+}
+header h2{
+   margin-top: 7px;
+   font-weight: 500;
+}
+header h3{
+   font-weight: 100;
+   font-size: 15px;
+}
+main{
+   background-color: white;
+   margin-top: 20px;
+   padding: 30px;
+   border-radius: 20px;
+}
+h1{
+   font-size: 25px;
+}
+.chart{
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+   min-height: 200px;
+   align-items: flex-end;
+   padding-bottom: 20px;
+   border-bottom: 1px solid hsl(28, 10%, 53%);
+}
+.hover{
+   background-color: hsl(25, 47%, 15%);
+   color: white;
+   padding: 5px;
+   border-radius: 5px;
+   margin-bottom: 5px;
+   font-size: 12px;
+   position: absolute;
+   top: 0px;
+   transition: .3s;
+   opacity: 0;
+   
+}
+
+.column:hover .hover{
+   opacity: 1;
+   top: -30px;
+   transition: .3s;
+}
+.column:hover .block{
+   opacity: 0.6;
+   transition: .2s;
+}
+.block{
+   background-color: hsl(10, 79%, 65%);
+   height: 80px;
+   width: 35px;
+   border-radius: 5px;
+   transition: .2s;
+   z-index: 10;
+}
+.block.active{
+   background-color: hsl(186, 34%, 60%);
+   transition: .2s;
+}
+.column{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: hsl(28, 10%, 53%);
+   cursor: pointer;
+   position: relative;
+}
+.info{
+   display: flex;
+   padding-top: 20px;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 20px;
+}
+.info .left h3{
+   font-size: 15px;
+   color: hsl(28, 10%, 53%);
+}
+.info .left h2{
+   font-size: 40px;
+}
+.info .right h4{
+   text-align: right;
+}
+.info .right h5{
+   color: hsl(28, 10%, 53%);
+}
+@media only screen and (max-width: 450px) {
+   .container, header{
+      width: 300px;
+   }
+   .block{
+      width: 25px;
+   }
+   .info .left h2{
+      font-size: 23px;
+   }
+   .info .left h3{
+      font-size: 11px;
+   }
+   h1{
+      font-size: 20px;
+   }   
+}

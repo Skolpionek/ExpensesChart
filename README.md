@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/css-flexbox-mhR7TtAbsx)
 - Live Site URL: [Live Site](https://skolpionek.github.io/ExpensesChart/)
 
 ### Built with
